@@ -8,7 +8,7 @@
 * [套件需求](kuai-su-kai-shi/tao-jian-xu-qiu.md)
 * [基本安裝](kuai-su-kai-shi/ji-ben-an-zhuang.md)
 * [進階安裝](kuai-su-kai-shi/jin-jie-an-zhuang.md)
-* [設定](kuai-su-kai-shi/she-ding-1.md)
+* [設定](kuai-su-kai-shi/設定.md)
 
 ## BREAD
 

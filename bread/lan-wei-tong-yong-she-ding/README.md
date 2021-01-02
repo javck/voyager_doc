@@ -8,7 +8,7 @@
 
 所有的formfield都具備的好用選項如下：
 
-**描述Description**
+## 描述Description
 
 所有的輸入項都支持描述讓你能夠有個地方向使用者說明究竟這個輸入項是做什麼用的，這不是必須的，如果需要的話，可加入以下設定
 
@@ -16,7 +16,7 @@ All formfields share a handful options:
 
 { "description": "輸入項的輸入提示" }
 
-**顯示**
+## 顯示
 
 有一些選項能夠讓你改變這些輸入項在BREAD頁面顯示的方式。你能夠加入一個display作為JSON物件，並在其加入width來變更輸入項的長度，又或者加入id來設定輸入項標籤的ID屬性
 
@@ -39,7 +39,7 @@ All formfields share a handful options:
 </div>
 ```
 
-**預設值**
+## 預設值
 
 大部分的輸入項都允許你在新增一筆資料時去定義其預設值
 
@@ -49,7 +49,7 @@ All formfields share a handful options:
 }
 ```
 
-**空值**
+## 空值
 
 你也許想要以空值null來存入資料庫欄位而非空字串。作法很簡單，你只要在可選細項加入以下設定：
 
@@ -69,7 +69,7 @@ All formfields share a handful options:
 }
 ```
 
-**生成Slugs**
+## 生成Slugs
 
 使用BREAD建構器，你也許希望能夠為某些輸入自動生成slug。比如說你有一些文章，它們有標題以及slug。假如你希望能夠自動根據標題屬性來生成slug，你可以在slug欄位的可選細項加入以下設定：
 
@@ -86,7 +86,7 @@ All formfields share a handful options:
 
 > 這個功能不支持中文，需要特別注意
 
-**自定義視圖**
+## 自定義視圖
 
 你可以設定自定義視圖來顯示輸入項，為此你可以加入view屬性來指定視圖檔案：
 

@@ -38,9 +38,9 @@ class Post extends Model
 
 等會再回來，當你再次切換語言頁籤，將會發現支持多語系的欄位內容會產生相應的改變，代表該欄位已經建立對應各語言的內容囉
 
-**用法**
+## 用法
 
-**提前載入多語系資料**
+### 提前載入多語系資料
 
 ```
 // 載入所有的多語系資料
@@ -60,11 +60,11 @@ $posts = Post::withTranslations(['en', 'da'])->get();
 $posts = Post::withTranslation('da')->get();
 ```
 
-**取得預設語系的欄位內容**
+### 取得預設語系的欄位內容
 
 `{{ $post->title }}`
 
-**取得指定語系的欄位內容**
+### 取得指定語系的欄位內容
 
 `{{ $post->getTranslatedAttribute('title', 'en', 'zh_TW') }}`
 
@@ -76,7 +76,7 @@ $posts = Post::withTranslation('da')->get();
 
 > 當模型欄位的預設語系與備用語系都找不到內容時，將會設定該欄位的內容為null，需要特別注意
 
-**翻譯整個模型**
+### 翻譯整個模型
 
 ```
 //第一參數為採用語系
@@ -90,7 +90,7 @@ $posts = $posts->translate('zh_TW', 'en');
 echo $posts[0]->title;
 ```
 
-**確認該模型能否被翻譯**
+### 確認該模型能否被翻譯
 
 ```
 // 透過字串
@@ -104,7 +104,7 @@ if (Voyager::translatable($post)) {
 }
 ```
 
-**動態設定欄位的語系內容**
+### 動態設定欄位的語系內容
 
 ```
 $post = $post->translate('zh_TW');
@@ -112,7 +112,7 @@ $post->title = '繁體標題內容';
 $post->save();
 ```
 
-**查詢可翻譯的模型**
+### 查詢可翻譯的模型
 
 當要查詢翻譯內容，你能夠使用whereTranslation\(\)
 

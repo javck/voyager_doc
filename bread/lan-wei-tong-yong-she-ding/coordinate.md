@@ -2,7 +2,7 @@
 
 這個我沒有用過，應該是用來設定地圖的經緯度座標，需要搭配資料庫欄位的設定才能夠正常執行，以下僅根據文件來進行簡要翻譯
 
-**showLatLngInput / showAutocompleteInput**
+## showLatLngInput / showAutocompleteInput
 
 是否要開啟自動完成輸入以及經緯度輸入功能，預設為true
 
@@ -13,7 +13,7 @@
 }
 ```
 
-**onChange**
+## onChange
 
 當改變時要觸發什麼JS方法，比如當使用自動完成地址來重設另一個輸入項選單就會用到，觸發間隔約為0.3秒
 

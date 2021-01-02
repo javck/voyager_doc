@@ -2,7 +2,7 @@
 
 所謂複寫指的是撰寫同樣檔名的檔案，用以蓋掉同名的套件檔案。用以修改套件的預設行為或畫面
 
-**複寫各slug的BREAD視圖**
+## 複寫各slug的BREAD視圖
 
 這是自定義中最為常見的用途，建議學會
 
@@ -25,9 +25,9 @@
 >
 > 找不到資料夾?不用擔心，預設可能不會有這個資料夾，請自己新增
 
-**使用自定義控制器**
+## 使用自定義控制器
 
-**複寫提交按鈕**
+### 複寫提交按鈕
 
 假如你只是想要修改edit-add.blade.php的提交按鈕，是不需要改寫整個視圖的，只需要將你的edit-add.blade.php檔案改成這樣即可
 
@@ -39,7 +39,7 @@
 @endsection
 ```
 
-**如何使用自定義控制器**
+### 如何使用自定義控制器
 
 你能夠複寫某一個BREAD的控制器，方法是建立一個繼承Voyager控制器的控制器，下面給你個例子：
 
@@ -62,7 +62,7 @@ class MyVoyagerCgyController extends \TCG\Voyager\Http\Controllers\VoyagerBaseCo
 
 你現在可以複寫VoyagerBaseController裡頭的所有方法了，詳情[看這裡](https://github.com/the-control-group/voyager/blob/1.1/src/Http/Controllers/VoyagerBaseController.php)
 
-**直接複寫Voyager控制器**
+### 直接複寫Voyager控制器
 
 > 警告
 >
@@ -93,7 +93,7 @@ class MyVoyagerCgyController extends \TCG\Voyager\Http\Controllers\VoyagerBaseCo
 
 Voyager將會把所有核心控制器檔案內容複製一份到 app\Http\Controllers\Voyager 路徑裡頭，你就可以去修改程式碼囉
 
-**複寫Voyager模型**
+### 複寫Voyager模型
 
 如果你願意，也可以複寫Voyager內建的模型 你需要加入以下程式碼到 AppServiceProvider.php 的 register\(\):
 

@@ -6,7 +6,3 @@
 
 我們何不趕緊動起來吧！在開始安裝 Voyager 套件之前，你也許想要快速的了解到底什麼是 Voyager，我們將在下一節為你說明。
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<div id="gitalk-container"></div>
-

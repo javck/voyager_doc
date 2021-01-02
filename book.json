@@ -2,12 +2,13 @@
   "title": "Laravel Voyager套件中文化手冊",
   "author": "林品爵 - 哥布林工程師",
   "description": "林品爵的資識庫。裡面包含了個人撰寫的所有程式文章，例如PHP . Laravel . Voyager套件等等……",
-  "language": "zh_TW",
+  "language": "zh-TW",
   "styles": {
     "website": "./css/gitbook-configure.css"
   },
   "plugins": [
     "theme-comscore",
+    "favicon",
     "prism",
     "-highlight",
     "copy-code-button",
@@ -61,6 +62,15 @@
     },
     "anchor-navigation-ex": {
       "showLevel": false
+    },
+    "favicon":{
+        "shortcut": "images/gitbook.ico",
+        "bookmark": "images/gitbook.ico",
+        "appleTouch": "images/gitbook.ico",
+        "appleTouchMore": {
+            "120x120": "images/gitbook.ico",
+            "180x180": "images/gitbook.ico"
+        }
     }
   }
 }

@@ -56,11 +56,11 @@
 | quality | 設定圖片上傳與產生縮圖時的壓縮比 | 整數 | 90 |
 | allowed | 可被上傳或選擇的檔案類型，如為空物件代表支持所有檔案類型，如果檔案型態沒列在裡頭的檔案將不會被顯示 | 物件 | \[\] |
 
-**允許的類型 Allowed types**
+## 允許的類型 Allowed types
 
 如果你希望使用者只能夠上傳某些特定類型的檔案，你可以利用 "allowed"這個屬性來達，比如設定為\["image", "audio", "video"\]又或者是連同檔名版本的\["image/jpeg", "image/png", "image/bmp"\]
 
-**表達式  Expression**
+## 表達式  Expression**
 
 像是選項裡頭的 base\_path 和 rename 都可以加入下面的替換符號：
 
@@ -73,11 +73,11 @@
 
 { "base\_path": "/my-bread/{pk}/{date:Y}/{date:m}/" }
 
-**浮水印 Watermark**
+## 浮水印 Watermark
 
 浮水印可以用來加在上傳的圖片上頭。要啟用這個功能，你需要定義一個來源屬性，它的所在位置是相對於Voyager的檔案系統的，預設也就是在storage/app/public這一層裡頭。這裡有一些可選擇的選項你能夠用到：
 
-**position 決定浮水印要顯示的問題，可以是:**
+## position 決定浮水印要顯示的問題，可以是:
 
 * top-left 左上角，此為預設
 * top 上方
@@ -89,23 +89,23 @@
 * bottom 下方
 * bottom-right 右下角
 
-**x 水平位移量**
+## x 水平位移量
 
 x屬性能設定浮水印要根據position的設定來調整多少水平位移，預設為0
 
-**y 垂直位移量**
+## y 垂直位移量
 
 y屬性能設定浮水印要根據position的設定來調整多少垂直位移，預設為0
 
-**size 浮水印大小**
+## size 浮水印大小
 
 浮水印的大小應該為原圖大小的比例，預設為15
 
-**縮圖 Thumbnails**
+## 縮圖 Thumbnails
 
 你能夠為每一個上傳的圖片來生成縮圖，它會有三種類型：
 
-**Fit**
+## Fit
 
 Fit結合了 cropping和 resizing 來找到最好的方式來生成縮圖以符合你的比例。 你一定要設定width，而height和position則是可選擇的。 以下是一個fit類型的例子：
 
@@ -129,7 +129,7 @@ Fit結合了 cropping和 resizing 來找到最好的方式來生成縮圖以符�
 
 而在這個例子裡頭，該資料夾除了有girl1.jpeg，還會多一個名為girl1-fit-500.jpeg
 
-**剪切 Crop**
+## 剪切 Crop
 
 根據所給定的尺寸和位置來剪切圖片。你必須提供width和height，而x和y則是可選擇給不給。一個Crop的例子像這樣：
 
@@ -148,7 +148,7 @@ Fit結合了 cropping和 resizing 來找到最好的方式來生成縮圖以符�
 }
 ```
 
-**重設大小 Resize**
+## 重設大小 Resize
 
 根據尺寸來重設圖片的大小，你必須設定width，height則是可選項。這是一個Resize的例子：
 

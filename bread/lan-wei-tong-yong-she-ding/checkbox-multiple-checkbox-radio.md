@@ -1,6 +1,6 @@
 # Checkbox/Multiple Checkbox/Radio
 
-**Checkbox**
+## Checkbox
 
 ```
 {
@@ -12,7 +12,7 @@
 
 在Voyager，Checkbox會以toggle開關這種樣貌來呈現，你可以設定開或關要顯示的文字內容。假如checked設為true的話該輸入項會設為開啟，否則預設是關閉的
 
-**Multiple Checkbox**
+## Multiple Checkbox
 
 ```
 {
@@ -26,7 +26,7 @@
 
 你能夠根據你的需要去建立多個Checkbox
 
-**Radio Button**
+## Radio Button
 
 ```
 {

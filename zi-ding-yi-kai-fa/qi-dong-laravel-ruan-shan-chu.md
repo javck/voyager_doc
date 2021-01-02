@@ -6,7 +6,7 @@
 
 Voyager只是協助為你的模型啟動軟刪除功能，所以關於軟刪除的操作請參考Laravel文件，請看[這裡](https://laravel.com/docs/8.x/scout#soft-deleting)
 
-**Voyager裡頭的表格設定**
+## Voyager裡頭的表格設定
 
 ![](https://i.imgur.com/k5Josc3.png)
 

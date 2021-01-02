@@ -83,7 +83,7 @@ class AppServiceProvider extends ServiceProvider
 
 ![](https://i.imgur.com/UKlrMF1.png)
 
-**顯示/隱藏行動按鈕**
+## 顯示/隱藏行動按鈕
 
 假如你只需要這個行動按鈕出現在特定的檔案型態，比如Post，那麼你可以在Action類別去實作函式shouldActionDisplayOnDataType\(\)
 
@@ -98,7 +98,7 @@ public function shouldActionDisplayOnDataType()
 }
 ```
 
-**批量行動**
+## 批量行動
 
 批量行動是用於多筆的模型實例，假如你的行動需要批量操作，比如一次刪除或修改多筆使用者選定的資料，只要實作以下方法：
 
