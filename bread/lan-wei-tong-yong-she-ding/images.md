@@ -1,6 +1,6 @@
 # Images
 
-```text
+```
 {
     "resize": {
         "width": "1000",

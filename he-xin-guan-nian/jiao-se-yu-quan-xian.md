@@ -8,7 +8,7 @@ Voyager內建了足夠好用的角色與權限設計。概念是每個使用者�
 
 在正式版本之後，Voayger的權限系統更貼近於Laravel的設計，這代表你能夠透過以下的方式來確認角色授權：
 
-```text
+```
 // 透過用戶物件
 $canViewPost = $user->can('read', $post);
 $canViewPost = Auth::user()->can('read', $post);
@@ -59,7 +59,7 @@ Voyager為你內建了以下這些權限：
 
 你能夠建立你自己的gate，關於gate的詳細說明請參考[這裡](https://laravel.com/docs/authorization#gates)
 
-```text
+```
 \\App\Providers\AppServiceProvider.php
 
 public function boot()
@@ -72,7 +72,7 @@ public function boot()
 
 要在控制器裡頭去驗證權限，你可以這樣作：
 
-```text
+```
 \\App\Http\Controllers\SiteController.php
 
 public function index()
@@ -88,7 +88,7 @@ public function index()
 
 > 根據我的測試，是不需要下面這段，就能啟動驗證的，不確定是否為作者的個人誤解
 
-```text
+```
 /**
 * Get the guard to be used during authentication.
 *
@@ -104,7 +104,7 @@ protected function guard()
 
 你能夠使用Blade語法來檢查權限。比如說你想要去確認使用者能否檢視文章posts，只需要使用以下的語法：
 
-```text
+```
 @can('browse', $post)
     I can browse posts
 @endcan
@@ -112,7 +112,7 @@ protected function guard()
 
 又或者你可以加入else的條件判斷，也是沒問題的，像這樣：
 
-```text
+```
 @can('browse', $post)
     I can browse posts
 @else
@@ -122,7 +122,7 @@ protected function guard()
 
 回到剛剛的例子，如果只是要在視圖內確認使用者能否檢視建立帳單，只需要這樣寫：
 
-```text
+```
 @can('browse_create_bill')
     建立帳單
 @endcan

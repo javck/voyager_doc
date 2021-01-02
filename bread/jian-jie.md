@@ -16,7 +16,7 @@ BROWSE \(欄位將會出現在顯示表格所有資料的頁面\) READ \(欄位�
 
 在每個欄位的可選細項裡，你可以透過簡單的JSON格式來加入Laravel內建的驗證規則。這裡是一個例子來告訴你要如何加入一個上限長度為12的驗證規則：
 
-```text
+```
 {
     "validation": {
         "rule": "required|max:12"
@@ -26,7 +26,7 @@ BROWSE \(欄位將會出現在顯示表格所有資料的頁面\) READ \(欄位�
 
 或許，你還想要為這些驗證規則加入自定義的錯誤訊息\(因為預設的錯誤訊息都是英文的\)，你可以這樣達成：
 
-```text
+```
 {
     "validation": {
         "rule": "required|max:12",
@@ -40,7 +40,7 @@ BROWSE \(欄位將會出現在顯示表格所有資料的頁面\) READ \(欄位�
 
 你當然可以加入更多的驗證規則，像這樣：
 
-```text
+```
 {
     "validation": {
         "rule": [
@@ -53,7 +53,7 @@ BROWSE \(欄位將會出現在顯示表格所有資料的頁面\) READ \(欄位�
 
 想要為新增與編輯加入不同的驗證規則?沒問題，你可以這樣做到:
 
-```text
+```
 {
     "validation": {
         "rule": "min:3",
@@ -99,7 +99,7 @@ Tagging讓你能夠為多對多關係的欄位去加入新的項目，比如說�
 
 比如說你只想要看到該使用者所張貼的文章，你就可以定義這樣的Scope:
 
-```text
+```
 \\app\Models\User.php
 
 public function scopeCurrentUser($query)

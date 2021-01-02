@@ -55,3 +55,12 @@
 * [缺少必要參數](wen-ti-pai-chu-1/que-shao-bi-yao-can-shu.md)
 * [無法進入後台，也沒出現任何錯誤](wen-ti-pai-chu-1/problem-3.md)
 
+## 參考資料
+
+* [哥布林挨踢頻道](https://www.youtube.com/channel/UCRQc4X-HryBeaHiqyvc9Y7w)
+* [哥布林程式教育](https://goblinlab.org)
+* [EzLaravel套件](https://packagist.org/packages/javck/ezlaravel)
+* [Voyager官方網站](https://voyager.devdojo.com/)
+* [哥布林基地](https://www.facebook.com/goblinLab)
+
+

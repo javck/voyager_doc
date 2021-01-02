@@ -4,7 +4,7 @@ Voyager支持為你的模型加入多語系功能，要開啟這個功能，你�
 
 第一步 你需要在config/voyager.php檔案內定義要支持的語系以及開啟多語系功能：
 
-```text
+```
 'multilingual' => [
     'enabled' => true,
     'default' => 'en',
@@ -17,7 +17,7 @@ Voyager支持為你的模型加入多語系功能，要開啟這個功能，你�
 
 第二步你需要加入 Translatable Trait 到你的模型裡頭，並定義它的 translatable 屬性：
 
-```text
+```
 \\App\Models\Post.php
 
 use TCG\Voyager\Traits\Translatable;
@@ -42,7 +42,7 @@ class Post extends Model
 
 **提前載入多語系資料**
 
-```text
+```
 // 載入所有的多語系資料
 $posts = Post::with('translations')->get();
 
@@ -78,7 +78,7 @@ $posts = Post::withTranslation('da')->get();
 
 **翻譯整個模型**
 
-```text
+```
 //第一參數為採用語系
 //第二參數為替代語系
 $post = $post->translate('zh_TW', 'en');
@@ -92,7 +92,7 @@ echo $posts[0]->title;
 
 **確認該模型能否被翻譯**
 
-```text
+```
 // 透過字串
 if (Voyager::translatable(Post::class)) {
     // 可被翻譯
@@ -106,7 +106,7 @@ if (Voyager::translatable($post)) {
 
 **動態設定欄位的語系內容**
 
-```text
+```
 $post = $post->translate('zh_TW');
 $post->title = '繁體標題內容';
 $post->save();

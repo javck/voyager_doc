@@ -28,7 +28,7 @@
 
 假如你希望為多對多關係去加入進階設定，你只需要在儲存好關係之後，回到BREAD設定頁面，找到該關係欄位的"可選細項"，加入類似以下的設定：
 
-```text
+```
 {
     "foreign_pivot_key": "user_id",
     "related_pivot_key": "role_id",
@@ -40,7 +40,7 @@
 
 \(目前測試沒有作用\)你可以排序關聯的結果透過在關係的可選細項設定排序物件，比如以下根據sort欄位來進行從小到大排序：
 
-```text
+```
 {
     "sort": {
         "field": "sort",
@@ -55,7 +55,7 @@
 
 舉例來說，假如你想要只顯示有效的資料，可以建立一個像這樣的scope:
 
-```text
+```
 public function scopeEnabled($query)
 {
     return $query->where('enabled', 1);
@@ -64,7 +64,7 @@ public function scopeEnabled($query)
 
 接著在關聯的可選細項加入以下設定
 
-```text
+```
 And add the following to the relationship options:
 {
     "scope": "enabled",

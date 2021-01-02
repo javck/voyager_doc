@@ -6,7 +6,7 @@
 
 接著你要把 Spatial-Trait 這個 trait 引入到你的模型裡頭，並定義該欄位：
 
-```text
+```
 \\App\Models\Category.php
 
 <?php

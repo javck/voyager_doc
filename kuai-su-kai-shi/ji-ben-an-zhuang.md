@@ -6,7 +6,7 @@
 
 接下來，請確保建立一個新的資料庫並在.env檔案裡頭加入驗證相關參數\(帳號.密碼.資料庫名稱等等\)，如果之前就有建則是可以直接使用。除此之外，也請確保在.env檔案裡頭有APP\_URL這個參數，並且這個網址應該指向到應用的首頁
 
-```text
+```
 \\.env
 
 APP_URL=http://localhost
@@ -18,7 +18,7 @@ DB_PASSWORD=secret
 
 接著，提醒你要先把應用的預設語系改為繁體中文，這樣等會在安裝Voyager套件的時候，後台的語言才會是中文喔，倒過來作可是不行的。請開啟confg/app.php，找到語系和時區(順便改，非必須)改成支持我們習慣的設定
 
-```text
+```
 \\config\app.php
 
 'timezone' => 'Asia/Taipei',
@@ -40,7 +40,7 @@ DB_PASSWORD=secret
 
 這樣就差不多完成囉! 你可以使用 php artisan serve 來開啟一個本地開發伺服器，並且開啟瀏覽器輸入網址 http://localhost:8000/admin來訪問後台 假如你有生成假資料的話，將會生成一個管理員帳號，你可以使用以下口令來進行登入
 
-```text
+```
 email: admin@admin.com
 password: password
 ```

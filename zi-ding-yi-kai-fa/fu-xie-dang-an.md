@@ -31,7 +31,7 @@
 
 假如你只是想要修改edit-add.blade.php的提交按鈕，是不需要改寫整個視圖的，只需要將你的edit-add.blade.php檔案改成這樣即可
 
-```text
+```
 @extends('voyager::bread.edit-add')
 @section('submit-buttons')
     @parent
@@ -43,7 +43,7 @@
 
 你能夠複寫某一個BREAD的控制器，方法是建立一個繼承Voyager控制器的控制器，下面給你個例子：
 
-```text
+```
 \\App\Http\Controllers\MyVoyagerCgyController.php
 
 <?php
@@ -70,7 +70,7 @@ class MyVoyagerCgyController extends \TCG\Voyager\Http\Controllers\VoyagerBaseCo
 
 假如你想要複寫任何Voyager的核心控制器，你要先去改變Voyager設定檔案voyager.php
 
-```text
+```
 \\config/voyager.php
 
 /*
@@ -103,7 +103,7 @@ Voyager將會把所有核心控制器檔案內容複製一份到 app\Http\Contro
 
 直接看範例，你會更清楚
 
-```text
+```
 \\App\Providers\AppServiceProvider.php
 
 <?php
@@ -126,7 +126,7 @@ class AppServiceProvider extends ServiceProvider
 
 下一步是你要去建立自己的模型並讓它繼承要複寫的模型，比如是 DataRow:
 
-```text
+```
 \\App\Models\MyDataRow.php
 
 <?php

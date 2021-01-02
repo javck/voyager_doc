@@ -2,7 +2,7 @@
 
 **Checkbox**
 
-```text
+```
 {
     "on" : "On Text",
     "off" : "Off Text",
@@ -14,7 +14,7 @@
 
 **Multiple Checkbox**
 
-```text
+```
 {
     "checked" : true,
     "options": {
@@ -28,7 +28,7 @@
 
 **Radio Button**
 
-```text
+```
 {
     "default" : "選項1的值",
     "options" : {

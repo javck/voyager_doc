@@ -6,7 +6,7 @@
 
 這些工作都將由voyager.php設定檔來負責，所以你只需要把要加入的CSS和JS檔案路徑寫在設定裡頭即可，下面給你個例子參考：
 
-```text
+```
 \\config\voyager.php
 
 'additional_css' => [

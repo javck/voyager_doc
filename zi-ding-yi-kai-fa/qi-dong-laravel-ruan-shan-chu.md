@@ -14,7 +14,7 @@ Voyager只是協助為你的模型啟動軟刪除功能，所以關於軟刪除�
 
 預設的模型類別長得像這樣:
 
-```text
+```
 <?php
 
 namespace App;
@@ -30,7 +30,7 @@ class YourModelName extends Model
 
 請改成下面的版本
 
-```text
+```
 <?php
 
 namespace App;

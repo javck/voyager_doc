@@ -20,7 +20,7 @@ All formfields share a handful options:
 
 有一些選項能夠讓你改變這些輸入項在BREAD頁面顯示的方式。你能夠加入一個display作為JSON物件，並在其加入width來變更輸入項的長度，又或者加入id來設定輸入項標籤的ID屬性
 
-```text
+```
 {
     "display": {
         "width": "3",
@@ -33,7 +33,7 @@ All formfields share a handful options:
 
 當你設定id之後，就會有一個div標籤包著輸入項，div標籤就帶著id屬性，內容為你指定的custom\_id，例如：
 
-```text
+```
 <div id="custom_id">
     <!-- Your field element -->
 </div>
@@ -43,7 +43,7 @@ All formfields share a handful options:
 
 大部分的輸入項都允許你在新增一筆資料時去定義其預設值
 
-```text
+```
 {
     "default" : "Default text"
 }
@@ -53,7 +53,7 @@ All formfields share a handful options:
 
 你也許想要以空值null來存入資料庫欄位而非空字串。作法很簡單，你只要在可選細項加入以下設定：
 
-```text
+```
 {
     "null": ""
 }
@@ -63,7 +63,7 @@ All formfields share a handful options:
 
 有些情況你需要把某些內容轉為null，比如說當使用者輸入Nothing的時候，不要存入Nothing到資料庫，而是null，可在可選細項加入以下設定：
 
-```text
+```
 {
     "null": "Nothing"
 }
@@ -73,7 +73,7 @@ All formfields share a handful options:
 
 使用BREAD建構器，你也許希望能夠為某些輸入自動生成slug。比如說你有一些文章，它們有標題以及slug。假如你希望能夠自動根據標題屬性來生成slug，你可以在slug欄位的可選細項加入以下設定：
 
-```text
+```
 {
     "slugify": {
         "origin": "title",
@@ -90,7 +90,7 @@ All formfields share a handful options:
 
 你可以設定自定義視圖來顯示輸入項，為此你可以加入view屬性來指定視圖檔案：
 
-```text
+```
 {
     "view": "my_view"
 }

@@ -4,7 +4,7 @@
 
 第一件事情要做的是要把Voyager的素材檔案佈署到專案裡頭，你能夠透過以下指令輕鬆做到這一點。
 
-```text
+```
 php artisan vendor:publish - -provider=“TCG\Voyager\VoyagerServiceProvider"
 php artisan vendor:publish - -provider=“Intervention\Image\ImageServiceProviderLaravelRecent"
 ```

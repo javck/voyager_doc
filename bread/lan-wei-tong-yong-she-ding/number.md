@@ -1,6 +1,6 @@
 # Number
 
-```text
+```
 {
     "step" : 0.1,
     "min" : 0,

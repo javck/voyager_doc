@@ -4,7 +4,7 @@
 
 舉個例子說明，每個文章Post都有作者User，而你希望顯示作者的全名。為了達成這個目的，需要先定義一個Accessor\(Java稱為getter\)如下：
 
-```text
+```
 \\App\Models\User.php
 public function getFullNameAttribute()
 {
@@ -14,7 +14,7 @@ public function getFullNameAttribute()
 
 接著，我們需要告訴Voyager有個Accessor我們想要使用，同樣在User.php裡頭加入：
 
-```text
+```
 \\App\Models\User.php
 
 public $additional_attributes = ['full_name'];

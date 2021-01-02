@@ -22,7 +22,7 @@
 
 如果這樣還不能滿足你的話，你還能夠自己撰寫自己的menu視圖。比如說你自己新增了一個menu視圖，位置在resources/views/my\_menu.blade.php，裡頭是這樣寫的：
 
-```text
+```
 <ul>
     @foreach($items as $menu_item)
         <li><a href="{{ $menu_item->link() }}">{{ $menu_item->title }}</a></li>

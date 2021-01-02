@@ -12,7 +12,7 @@
 * 原因1的解法就是為了表格建立主鍵
 * 原因2的解法就是在模型裡面去告知正確的主鍵欄位名稱
 
-```text
+```
 \\App\Models\Article.php
 
 $primaryKey = 'your_primary_key';

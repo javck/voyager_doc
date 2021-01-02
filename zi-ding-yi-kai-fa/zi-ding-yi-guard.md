@@ -8,7 +8,7 @@
 
 接著開啟AuthServiceProvider類別並加入以下程式碼到register\(\)裡頭：
 
-```text
+```
 \\App\Providers\AuthServiceProvider.php
 
 public function register(){
@@ -28,7 +28,7 @@ public function register(){
 
 首先，建立一個名為admins的表格，Migration檔案的表格結構寫成這樣
 
-```text
+```
 <?php
 Schema::create('admins', function (Blueprint $table) {
     $table->bigIncrements('id');
@@ -46,7 +46,7 @@ Schema::create('admins', function (Blueprint $table) {
 
 接下來建立一個名為Admin的模型類別，繼承Voyager的User模型：
 
-```text
+```
 <?php
 
 namespace App;
@@ -59,7 +59,7 @@ class Admin extends \TCG\Voyager\Models\User
 
 下一步，建立一個名為admin的guard，以及一個名為admins的使用者供應器，編輯config/auth.php設定檔
 
-```text
+```
 //config/auth.php
 
 'guards' => [
@@ -83,7 +83,7 @@ class Admin extends \TCG\Voyager\Models\User
 
 下一步，你需要告訴Voyager去使用你的新guard，開啟AppServiceProvider.php\(不是AuthServiceProvider.php，我猜兩個應該都可以，只是時間先後的差別\)，加入以下程式碼：
 
-```text
+```
 \\App\Providers\AppServiceProvider.php
 
 public function register()

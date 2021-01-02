@@ -1,6 +1,6 @@
 # Date & Time
 
-```text
+```
 {
     "format" : "%Y-%m-%d"
 }

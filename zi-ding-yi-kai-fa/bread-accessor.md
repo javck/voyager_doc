@@ -4,7 +4,7 @@
 
 舉個例子，假如你有一個name欄位，而在全覽頁也就是Browse，你希望在這個欄位為空值時你希望能改成顯示無名氏，那你可以在模型加入以下程式碼：
 
-```text
+```
 \\App\Models\User.php
 
 <?php
@@ -21,7 +21,7 @@ public function getNameAttribute()
 
 請將剛才的程式碼微調成下面的版本，也就是在方法名稱加上Browse，現在這段程式碼只有在Browse頁面才會生效
 
-```text
+```
 \\App\Models\User.php
 
 <?php
@@ -34,7 +34,7 @@ public function getNameBrowseAttribute()
 
 其他頁面都有類似的作法可以採用，如下面所列：
 
-```text
+```
 \\App\Models\User.php
 
 <?php

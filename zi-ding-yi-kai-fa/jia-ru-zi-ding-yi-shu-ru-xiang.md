@@ -10,7 +10,7 @@
 
 首先建立一個新類別到專案裡頭，放在哪個資料夾都沒差，為了好整理，建立App\FormFields資料夾來存放，取名為NumberFormField
 
-```text
+```
 \\App\FormFields\NumberFormField.php
 
 <?php
@@ -39,7 +39,7 @@ $codename變數是用來顯示在Bread設定頁的下拉選單，有支持中文
 
 接下來我們就要動手製作這個輸入項視圖，在resources/views資料夾裡頭建立一個formfields資料夾，並在裡面新增number.blade.php，內容如下：
 
-```text
+```
 <input type="number"
        class="form-control"
        name="{{ $row->field }}"
@@ -58,7 +58,7 @@ $codename變數是用來顯示在Bread設定頁的下拉選單，有支持中文
 
 當輸入項視圖完成後，我們還要告訴Voyager有一個新的輸入項需要被載入。我們需要在Service Provider來進行這個動作，一般來說最常用的就是AppServiceProvider
 
-```text
+```
 \\App\Providers\AppServiceProvider.php
 
 <?php

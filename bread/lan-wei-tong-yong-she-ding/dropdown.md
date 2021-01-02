@@ -1,6 +1,6 @@
 # Dropdown
 
-```text
+```
 {
     "default" : "選項1的值",
     "options" : {

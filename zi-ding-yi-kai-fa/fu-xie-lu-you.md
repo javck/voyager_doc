@@ -4,7 +4,7 @@
 
 比如說假如你想要複寫登錄相關的控制器，就可以這樣作
 
-```text
+```
 \\routes\web.php
 
 Route::group(['prefix' => 'admin'], function () {

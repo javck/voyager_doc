@@ -8,7 +8,7 @@
 
 首先，我們將建立一個 Action 類別繼承自 Voyager的 AbstractAction，比方命名為MyAction.php，如下所列：
 
-```text
+```
 \\App\Actions\MyAction.php
 
 <?php
@@ -59,7 +59,7 @@ class MyAction extends AbstractAction
 
 下一步，我們需要告訴 Voyager 要使用這個 Action。為此，再度開啟AppServiceProvider.php，修改 boot\(\)，如下所示：
 
-```text
+```
 \\App\Providers\AppServiceProvider.php
 
 <?php
@@ -87,7 +87,7 @@ class AppServiceProvider extends ServiceProvider
 
 假如你只需要這個行動按鈕出現在特定的檔案型態，比如Post，那麼你可以在Action類別去實作函式shouldActionDisplayOnDataType\(\)
 
-```text
+```
 \\App\Actions\MyAction.php
 
 <?php
@@ -102,7 +102,7 @@ public function shouldActionDisplayOnDataType()
 
 批量行動是用於多筆的模型實例，假如你的行動需要批量操作，比如一次刪除或修改多筆使用者選定的資料，只要實作以下方法：
 
-```text
+```
 \\App\Actions\MyAction.php
 
 <?php

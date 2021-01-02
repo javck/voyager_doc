@@ -10,7 +10,7 @@
 
 如果需要調整它的預設行為的話，你可以在可選細項加入以下選項：
 
-```text
+```
 {
     "max": 10,
     "min": 0,
@@ -109,7 +109,7 @@ y屬性能設定浮水印要根據position的設定來調整多少垂直位移�
 
 Fit結合了 cropping和 resizing 來找到最好的方式來生成縮圖以符合你的比例。 你一定要設定width，而height和position則是可選擇的。 以下是一個fit類型的例子：
 
-```text
+```
 {
     "thumbnails": [
         {
@@ -133,7 +133,7 @@ Fit結合了 cropping和 resizing 來找到最好的方式來生成縮圖以符�
 
 根據所給定的尺寸和位置來剪切圖片。你必須提供width和height，而x和y則是可選擇給不給。一個Crop的例子像這樣：
 
-```text
+```
 {
     "thumbnails": [
         {
@@ -152,7 +152,7 @@ Fit結合了 cropping和 resizing 來找到最好的方式來生成縮圖以符�
 
 根據尺寸來重設圖片的大小，你必須設定width，height則是可選項。這是一個Resize的例子：
 
-```text
+```
 {
     "thumbnails": [
         // 寬度將會是 500px, 而高度將會根據圖片的比例計算而得
