@@ -1,0 +1,66 @@
+{
+  "title": "Laravel Voyager套件中文化手冊",
+  "author": "林品爵 - 哥布林工程師",
+  "description": "林品爵的資識庫。裡面包含了個人撰寫的所有程式文章，例如PHP . Laravel . Voyager套件等等……",
+  "language": "zh_TW",
+  "styles": {
+    "website": "./css/gitbook-configure.css"
+  },
+  "plugins": [
+    "theme-comscore",
+    "prism",
+    "-highlight",
+    "copy-code-button",
+    "search-pro",
+    "-search",
+    "-lunr",
+    "expandable-chapters",
+    "splitter",
+    "sharing",
+    "github-buttons",
+    "donate",
+    "tbfed-pagefooter",
+    "anchor-navigation-ex"
+  ],
+  "pluginsConfig": {
+    "github-buttons": {
+      "buttons": [
+        {
+          "user": "javck",
+          "repo": "document-library",
+          "type": "star",
+          "count": true,
+          "size": "small"
+        },
+        {
+          "user": "javck",
+          "width": "160",
+          "type": "follow",
+          "count": true,
+          "size": "small"
+        }
+      ]
+    },
+    "donate": {
+      "button": "打賞",
+      "alipayText": "歐付寶打賞",
+      "wechatText": "LinePay打賞",
+      "alipay": "https://github.com/LiangJunrong/document-library/blob/master/public-repertory/img/seek-reward.jpg?raw=true",
+      "wechat": "https://github.com/LiangJunrong/document-library/blob/master/public-repertory/img/seek-reward.png?raw=true"
+    },
+    "prism": {
+      "css": ["prismjs/themes/prism-solarizedlight.css"],
+      "lang": {
+        "shell": "bash"
+      }
+    },
+    "tbfed-pagefooter": {
+      "copyright": "Copyright &copy Goblin Lab Studio 2021",
+      "modify_label": "該文件修訂時間：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    },
+    "anchor-navigation-ex": {
+      "showLevel": false
+    }
+  }
+}
