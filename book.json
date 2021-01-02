@@ -18,7 +18,7 @@
     "splitter",
     "sharing",
     "github-buttons",
-    "donate",
+    "-donate",
     "tbfed-pagefooter",
     "anchor-navigation-ex"
   ],
